@@ -1,5 +1,6 @@
 body {
     background-color: #d9dd92;
+    touch-action: manipulation;
   }
   
   h1 {
