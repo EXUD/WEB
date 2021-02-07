@@ -96,7 +96,7 @@ function CtrlRight(){
 
 function after(){
     showMAP();
-    document.getElementById("stats").innerHTML = "Move all " + MapChr.obj + " to " + MapChr.goal + "!\nYou can walk over " + MapChr.goal;
+    document.getElementById("stats").innerHTML = "<p>Move all " + MapChr.obj + " to " + MapChr.goal + "!</p><p>You can walk over " + MapChr.goal + "</p>";
     if (FIN < 0){
         reset();
     }
@@ -120,7 +120,7 @@ var MapChr = {wall:'🟥',land:' ',user:'👷🏽',goal:'★',obj:'📦',done:'�
 //❌
 var PLoc = [0,0], OnGoal = [0,0];
 var FIN, OBJ, MAP;
-document.getElementById("stats").innerHTML = "Move all " + MapChr.obj + " to " + MapChr.goal + "!\nYou can walk over " + MapChr.goal;
+document.getElementById("stats").innerHTML = "<p>Move all " + MapChr.obj + " to " + MapChr.goal + "!</p><p>You can walk over " + MapChr.goal + "</p>";
 reset();
 
 /*
