@@ -1,0 +1,68 @@
+body {
+    background-color: #d9dd92;
+  }
+  
+  h1 {
+    color: #311e10;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    text-align: center;
+  }
+
+button {
+    color: white;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.10);
+    background-repeat: no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    background-image: none;
+    z-index: 1;
+    border-radius: 12px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.reset {
+    
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.10);
+    background-repeat: no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    background-image: none;
+    z-index: 1;
+    border-radius: 12px;
+}
+
+#gradient {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+}
+
+.center {
+    text-align: center;
+}
