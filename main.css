@@ -12,6 +12,7 @@ body {
     font-family: verdana;
     font-size: 20px;
     text-align: center;
+    touch-action: manipulation;
   }
 
 button {
@@ -27,6 +28,7 @@ button {
     background-image: none;
     z-index: 1;
     border-radius: 12px;
+    touch-action: manipulation;
 }
 
 table, th, td {
