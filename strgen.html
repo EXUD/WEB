@@ -16,7 +16,8 @@
         </p>
         <p>1)Number  2)Lower  4)Upper  8)Symbol</p>
         <p><input type="button" onclick="strGen()" style="width:10em; height:4em;" value="Generate"></p>
-        <div id="strGen_Output" style="width:90%; height:3em; word-wrap: break-word; background-color: rgb(0,0,0,0.5); margin-left: auto; margin-right: auto;"></div>
+        <div onclick="copy()" id="strGen_Output" style="width:90%; height:3em; word-wrap: break-word; background-color: rgb(0,0,0,0.5); margin-left: auto; margin-right: auto;"></div>
+        <input id="strGen_dummy" type="text" hidden>
     </div>
 </body>
 
@@ -42,4 +43,18 @@
         
         document.getElementById("strGen_Output").innerHTML = temp;
     }
+
+    function copy() {
+        copyToClipboard(document.getElementById("strGen_Output").innerHTML);
+    }
+
+    function copyToClipboard(text) {
+        var dummy = document.createElement("textarea");
+        document.body.appendChild(dummy);
+        dummy.value = text;
+        dummy.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy);
+    }
+    
 </script>
